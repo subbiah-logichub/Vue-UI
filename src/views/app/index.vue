@@ -1,6 +1,11 @@
 <template>
-  <div v-if="showLoading" class="asd text-4xl">Loading...</div>
-  <router-view v-else></router-view>
+  <div class="asv">
+    <nav class="asv-nav"></nav>
+    <main class="asv-view">
+      <div v-if="showLoading" class="asv-view-loading">Loading...</div>
+      <router-view v-else></router-view>
+    </main>
+  </div>
 </template>
 <script setup lang="ts">
 import { onBeforeMount, onMounted, computed, watchEffect } from "vue";
@@ -34,11 +39,16 @@ body {
   height: 100vh;
   margin: 0;
   width: 100vw;
-  background: black;
-  color: white;
+  background: var(--asv-background);
+  color: var(--asv-on-background);
 }
 
-#app {
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.asv {
   height: 100%;
   width: 100%;
 }

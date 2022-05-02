@@ -1,0 +1,53 @@
+@mixin createTheme(
+  $primary,
+  $on-primary,
+  $primary-container,
+  $on-primary-container,
+  $secondary,
+  $on-secondary,
+  $secondary-container,
+  $on-secondary-container,
+  $tertiary,
+  $on-tertiary,
+  $tertiary-container,
+  $on-tertiary-container,
+  $error,
+  $on-error,
+  $error-container,
+  $on-error-container,
+  $outline,
+  $background,
+  $on-background,
+  $surface,
+  $on-surface,
+  $surface-variant,
+  $on-surface-variant,
+  $inverse-surface,
+  $inverse-on-surface
+) {
+  --asv-primary: #{$primary};
+  --asv-on-primary: #{$on-primary};
+  --asv-primary-container: #{$primary-container};
+  --asv-on-primary-container: #{$on-primary-container};
+  --asv-secondary: #{$secondary};
+  --asv-on-secondary: #{$on-secondary};
+  --asv-secondary-container: #{$secondary-container};
+  --asv-on-secondary-container: #{$on-secondary-container};
+  --asv-tertiary: #{$tertiary};
+  --asv-on-tertiary: #{$on-tertiary};
+  --asv-tertiary-container: #{$tertiary-container};
+  --asv-on-tertiary-container: #{$on-tertiary-container};
+  --asv-error: #{$error};
+  --asv-on-error: #{$on-error};
+  --asv-error-container: #{$error-container};
+  --asv-on-error-container: #{$on-error-container};
+  --asv-outline: #{$outline};
+  --asv-background: #{$background};
+  --asv-on-background: #{$on-background};
+  --asv-surface: #{$surface};
+  --asv-on-surface: #{$on-surface};
+  --asv-surface-variant: #{$surface-variant};
+  --asv-on-surface-variant: #{$on-surface-variant};
+  --asv-inverse-surface: #{$inverse-surface};
+  --asv-inverse-on-surface: #{$inverse-on-surface};
+}

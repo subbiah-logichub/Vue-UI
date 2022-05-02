@@ -12,6 +12,7 @@ function openDropdown(
   }
 ) {
   const { bottom, right } = e.target.getBoundingClientRect();
+  // eslint-disable-next-line no-console
   console.log(bottom, right);
   e.preventDefault();
 }

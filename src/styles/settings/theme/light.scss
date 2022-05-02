@@ -1,0 +1,33 @@
+@import "./mixin.scss";
+
+@media (prefers-color-scheme: light) {
+  .asv-system-theme {
+    @include createTheme(
+      $primary: #6750a4,
+      $on-primary: #ffffff,
+      $primary-container: #eaddff,
+      $on-primary-container: #21005d,
+      $secondary: #625b71,
+      $on-secondary: #ffffff,
+      $secondary-container: #e8def8,
+      $on-secondary-container: #1d192b,
+      $tertiary: #7d5260,
+      $on-tertiary: #ffffff,
+      $tertiary-container: #ffd8e4,
+      $on-tertiary-container: #31111d,
+      $error: #b3261e,
+      $on-error: #ffffff,
+      $error-container: #f9dedc,
+      $on-error-container: #410e0b,
+      $outline: #79747e,
+      $background: #fffbfe,
+      $on-background: #1c1b1f,
+      $surface: #fffbfe,
+      $on-surface: #1c1b1f,
+      $surface-variant: #e7e0ec,
+      $on-surface-variant: #49454f,
+      $inverse-surface: #313033,
+      $inverse-on-surface: #f4eff4
+    );
+  }
+}
