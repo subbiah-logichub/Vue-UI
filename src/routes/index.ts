@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
-import Home from "@/views/home/index.vue";
+import IRL from "@/views/irl/index.vue";
 const Chat = () => import("@/views/chat/index.vue");
 
 declare module "vue-router" {
@@ -16,7 +16,7 @@ const standaloneRoutes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: Home,
+    component: IRL,
   },
 ].map((route: RouteRecordRaw) => {
   return {

@@ -19,6 +19,7 @@ module.exports = {
     "vue/multi-word-component-names": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "no-unsafe-optional-chaining": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
   },
   overrides: [
     {

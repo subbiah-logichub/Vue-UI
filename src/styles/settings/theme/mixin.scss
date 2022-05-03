@@ -1,53 +1,28 @@
-@mixin createTheme(
-  $primary,
-  $on-primary,
-  $primary-container,
-  $on-primary-container,
-  $secondary,
-  $on-secondary,
-  $secondary-container,
-  $on-secondary-container,
-  $tertiary,
-  $on-tertiary,
-  $tertiary-container,
-  $on-tertiary-container,
-  $error,
-  $on-error,
-  $error-container,
-  $on-error-container,
-  $outline,
-  $background,
-  $on-background,
-  $surface,
-  $on-surface,
-  $surface-variant,
-  $on-surface-variant,
-  $inverse-surface,
-  $inverse-on-surface
-) {
-  --asv-primary: #{$primary};
-  --asv-on-primary: #{$on-primary};
-  --asv-primary-container: #{$primary-container};
-  --asv-on-primary-container: #{$on-primary-container};
-  --asv-secondary: #{$secondary};
-  --asv-on-secondary: #{$on-secondary};
-  --asv-secondary-container: #{$secondary-container};
-  --asv-on-secondary-container: #{$on-secondary-container};
-  --asv-tertiary: #{$tertiary};
-  --asv-on-tertiary: #{$on-tertiary};
-  --asv-tertiary-container: #{$tertiary-container};
-  --asv-on-tertiary-container: #{$on-tertiary-container};
-  --asv-error: #{$error};
-  --asv-on-error: #{$on-error};
-  --asv-error-container: #{$error-container};
-  --asv-on-error-container: #{$on-error-container};
-  --asv-outline: #{$outline};
-  --asv-background: #{$background};
-  --asv-on-background: #{$on-background};
-  --asv-surface: #{$surface};
-  --asv-on-surface: #{$on-surface};
-  --asv-surface-variant: #{$surface-variant};
-  --asv-on-surface-variant: #{$on-surface-variant};
-  --asv-inverse-surface: #{$inverse-surface};
-  --asv-inverse-on-surface: #{$inverse-on-surface};
+// Surface color alpha levels
+$asv-color-strong: 1;
+$asv-color-normal: 0.87;
+$asv-color-helptext: 0.48;
+$asv-color-light: 0.24;
+$asv-color-disabled: 0.16;
+
+// Border color alpha levels
+$asv-border-normal: 0.08;
+
+// Interactiveness alpha levels
+$asv-border-hover: 0.04;
+$asv-border-active: 0.1;
+
+@mixin createTheme($level0, $level1, $level2, $level3, $level4, $colorCode) {
+  --asv-surface-level-0: #{$level0};
+  --asv-surface-level-1: #{$level1};
+  --asv-surface-level-2: #{$level2};
+  --asv-surface-level-3: #{$level3};
+  --asv-surface-level-4: #{$level4};
+
+  --asv-text-normal: rgba(#{$colorCode}, #{$asv-color-normal});
+  --asv-text-helptext: rgba(#{$colorCode}, #{$asv-color-helptext});
+
+  --asv-border-normal: rgba(#{$colorCode}, #{$asv-border-normal});
+  --asv-border-hover: rgba(#{$colorCode}, #{$asv-border-hover});
+  --asv-border-active: rgba(#{$colorCode}, #{$asv-border-active});
 }
